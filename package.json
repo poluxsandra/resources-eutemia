@@ -1,6 +1,6 @@
 {
 	"name": "resources-code",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Pieces of code for reuse in future projects",
 	"main": "index.js",
 
