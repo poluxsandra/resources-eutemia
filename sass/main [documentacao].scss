@@ -1,0 +1,69 @@
+//Variáveis
+$theme-colors: (
+	"primary":    #008000,
+	"secondary":  #ff0000,
+	"success":    #ffff00,
+	"info":       #4b0082,
+	"warning":    #0000ff,
+	"danger":     #ff8c00,
+	"light":      #fff,
+	"dark":       #000
+);
+
+$table-border-color: #2e8b57;
+
+$body-color: #fff;
+$body-bg: #000;
+
+$link-color: #008000;
+$link-decoration: #ff0000 solid underline;
+
+$link-hover-color: #ff0000;
+$link-hover-decoration: #008000 solid underline;
+
+
+
+//Obrigatórios
+
+@import "sass/functions";
+@import "sass/variables";
+@import "sass/mixins";
+@import "sass/utilities";
+@import "sass/root";
+@import "sass/reboot";
+
+
+// Opcionais
+
+@import "sass/type";
+@import "sass/images";
+@import "sass/containers";
+@import "sass/grid";
+@import "sass/tables";
+@import "sass/forms";
+@import "sass/buttons";
+@import "sass/transitions";
+@import "sass/dropdown";
+@import "sass/button-group";
+@import "sass/nav";
+@import "sass/navbar"; //Requer Nav
+@import "sass/card";
+@import "sass/accordion";
+@import "sass/breadcrumb";
+@import "sass/pagination";
+@import "sass/badge";
+@import "sass/alert";
+@import "sass/progress";
+@import "sass/list-group";
+@import "sass/close";
+@import "sass/toasts";
+@import "sass/modal"; //Requer transitions
+@import "sass/tooltip";
+@import "sass/popover";
+@import "sass/carousel";
+@import "sass/spinners";
+@import "sass/offcanvas";
+
+@import "sass/helpers";
+
+@import "sass/utilities/api";

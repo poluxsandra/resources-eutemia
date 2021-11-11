@@ -1,0 +1,40 @@
+{
+	"name": "resources-code",
+	"version": "0.1.0",
+	"description": "Pieces of code for reuse in future projects",
+	"main": "index.js",
+
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/poluxsandra/resources-code.git"
+	},
+	"keywords": [
+		"code",
+		"html",
+		"css",
+		"ecmascript",
+		"javascript",
+		"lib",
+		"framework"
+	],
+	"author": "Sandra Martini",
+	"license": "GPL-3.0-or-later",
+	"bugs": {
+		"url": "https://github.com/poluxsandra/resources-code/issues"
+	},
+	"homepage": "https://github.com/poluxsandra/resources-code#readme",
+
+	"devDependencies": {
+		"autoprefixer": "^10.3.1",
+		"postcss": "^8.3.5",
+		"purgecss": "^4.0.3",
+		"postcss-cli": "^8.3.1",
+		"sass": "^1.35.2"
+	},
+	"dependencies": {
+
+	},
+	"scripts": {
+		"css-main": "sass main.scss:main.css && postcss main.css --replace --use autoprefixer"
+	}
+}

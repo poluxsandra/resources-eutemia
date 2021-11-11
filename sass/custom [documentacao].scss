@@ -1,0 +1,248 @@
+.bd-callout {
+	padding: 1.25rem;
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+	border: 2px solid #5d8aa8;
+	border-width: 0.25rem;
+	border-radius: 0.25rem;
+}
+
+.bd-callout h4 {
+	margin-bottom: 0.25rem;
+}
+
+.bd-callout p:last-child {
+	margin-bottom: 0;
+}
+
+.bd-callout code {
+	border-radius: 0.25rem;
+}
+
+.bd-callout + .bd-callout {
+	margin-top: -0.25rem;
+}
+
+.bd-callout-success {
+	border-color: #ffff00;
+}
+
+.bd-callout-info {
+	border-color: #4b0082;
+}
+
+.bd-callout-warning {
+	border-color: #0000ff;
+}
+
+.bd-callout-danger {
+	border-color: #ff8c00;
+}
+
+.tcoluna {
+	color: #9400d3;
+}
+
+.tcelesp {
+	color: #8b5742;
+}
+
+.rclass {
+	color: #fbec5d;
+}
+
+.relement {
+	color: #964b00;
+}
+
+.rprop {
+	color: #993399;
+}
+
+.rvalorprop {
+	color: #120a8f;
+}
+
+.ratrib {
+	color: #eead2d;
+}
+
+.rvaloratrib {
+	color: #32cd32;
+}
+
+.rsass {
+	color: #248eff;
+}
+
+.rsymb {
+	color: #708090;
+}
+
+.rdecla {
+	color: #228b22;
+}
+
+.rcss {
+	color: #ff1493;
+}
+
+.rjs {
+	color: #ff2400;
+}
+
+.rid {
+	color: #ed9121;
+}
+
+.helement {
+	color: #ff007f;
+}
+
+.htag {
+	color: #87cefa;
+}
+
+.creser {
+	color: #ccff33;
+}
+
+.cpseudo {
+	color: #4169e1;
+}
+
+.jhtml {
+	color: #008000;
+}
+
+.jreser {
+	color: #e32636;
+}
+
+.jvar {
+	color: #ffd700;
+}
+
+.jstring {
+	color: #0000cd;
+}
+
+.jnumboo {
+	color: #ff7f50;
+}
+
+.jarr {
+	color: #a9a9a9;
+}
+
+.jobj {
+	color: #696969;
+}
+
+.jprop {
+	color: #9370db;
+}
+
+.jvalor {
+	color: #705714;
+}
+
+.jmetodo {
+	color: #00ff7f;
+}
+
+.jfunc {
+	color: #0047ab;
+}
+
+.jpara {
+	color: #ffbf00;
+}
+
+.jloop {
+	color: #ff69b4;
+}
+
+.sreser {
+	color: #000080;
+}
+
+.tshell {
+	color: #de3163;
+}
+
+.tcommand {
+	color: #6b8e23;
+}
+
+.tpar {
+	color: #90ee90;
+}
+
+.tflag {
+	color: #fde910;
+}
+
+.tdest {
+	color: #9966cc;
+}
+
+h1, .h1 {
+	color: #fc0fc0;
+}
+
+h2, .h2 {
+	color: #ec2300;
+}
+
+h3, .h3 {
+	color: #7fff00;
+}
+
+h4, .h4 {
+	color: #00bfff;
+}
+
+h5, .h5 {
+	color: #cd7f32;
+}
+
+abbr {
+	text-decoration: none;
+}
+
+.callout:hover {
+	font-size: 1.3rem;
+	text-decoration-line:none;
+}
+
+.callout {
+	text-decoration-line: none;
+}
+
+.lisummary {
+	list-style: none;
+}
+
+.tableatrib {
+	background-color: rgba(4, 19, 162, 0.6)
+}
+
+.listindex {
+	list-style-type: disc;
+}
+
+.linkindex {
+	text-decoration-line: none;
+}
+
+.linkindex:hover {
+	text-decoration-line: none;
+	font-size: calc(1.25 * (1.325rem + 0.9vw));
+}
+
+@media (min-width: 1200px) {
+	.linkindex:hover {
+		font-size: calc(1.25 * 2rem);
+	}
+}
