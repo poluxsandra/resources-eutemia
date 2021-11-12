@@ -1,0 +1,164 @@
+// Colors
+
+$bg-primary: #222;
+$bg-secondary: #f5f5f5;
+$btn-fade-bg: #FF4500;
+$btn-bounce-bg: $bg-secondary;
+$btn-overlay-bg: #7ba428;
+$btn-shake-bg: #00BFFF;
+
+// Base Styling
+
+body{
+	background:$bg-secondary;
+}
+
+// Mixins
+@mixin center{
+	margin-left: auto;
+	margin-right: auto
+}
+
+@mixin typo{
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family: 'Lato', sans-serif;
+	@content;
+}
+
+@mixin anim($name,$value1,$value2){
+	@keyframes #{$name} {
+		from{
+			transform:$value1;
+		}
+		to{
+			transform: $value2;
+		}
+	}
+}
+
+@mixin gradient{
+	background: #667db6;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
+@mixin remove_top_radius{
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+// placeholder
+%btn{
+	border: none;
+	display: block;
+	width: 300px;
+	padding: 20px;
+	color:$bg-secondary;
+	font-size: 1.4em;
+	margin-bottom: 30px;
+	transform-style: preserve-3d;
+	cursor: pointer;
+	border-radius: .27em;
+	box-shadow: 0px 5px 24px rgba($bg-primary,0.3);
+	@include typo{
+		font-size: 1.3em;
+		font-weight: 400;
+	}
+	@include center;
+	&:focus{
+		outline: none;
+	}
+}
+
+// Button Styling
+.button-group{
+	width: 70%;
+	margin-top: 100px;
+	@include center;
+	h1{
+		margin-bottom: 70px;
+		text-align: center;
+		@include typo{
+			font-size: 2.4em;
+			font-weight: 200;
+		}
+	}
+}
+
+// 3d rotate box
+.rotate{
+	padding-top: 15px;
+	max-width: 300px;
+	@include center;
+}
+
+.btn{
+	// fade button hover
+	&-fade{
+		@extend %btn;
+		background:$btn-fade-bg;
+		&:hover{
+			background:lighten($btn-fade-bg,15%);
+			transition:300ms ease-in;
+		}
+	}
+
+	// bounce button hover
+	&-bounce{
+		@extend %btn;
+		background: $btn-bounce-bg;
+		color:$bg-primary;
+		&:hover{
+			animation: bounce 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+		}
+	}
+
+	// overlay button hover
+	&-overlay{
+		@extend %btn;
+		background: $btn-overlay-bg;
+		position: relative;
+		overflow: hidden;
+		&:after{
+			content: '';
+			position: absolute;
+			width: 115%;
+			height: 200px;
+			background:lighten($btn-overlay-bg,10%);
+			transform: translateY(-45%) skew(25deg) scale(0);
+			left: -5%;
+			transition: 200ms ease-in-out;
+		}
+		&:hover:after{
+			transform: translateY(-45%) skew(25deg) scale(1);
+		}
+		span{
+			position: relative;
+			z-index: 1;
+		}
+	}
+
+	// shake button hover
+	&-shake{
+		@extend %btn;
+		background: $btn-shake-bg;
+		&:hover{
+			animation: shake 100ms linear;
+			animation-iteration-count: 5;
+		}
+	}
+
+//3D Button
+&-threeD{
+
+}
+
+}
+
+
+// Animations
+@include anim('bounce',scale(1.1),scale(1));
+@include anim('shake',rotate(5deg),rotate(0));
