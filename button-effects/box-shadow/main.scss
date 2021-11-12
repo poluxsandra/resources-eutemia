@@ -1,0 +1,78 @@
+$btn-width: 8em;
+$btn-width-half: 4em;
+$btn-height: 3em;
+$btn-height-half: 1.5em;
+
+.close:hover {
+	box-shadow:
+		inset $btn-width-half 0 0 0 #FFC400,
+		inset -#{$btn-width-half} 0 0 0 #FFC400;
+}
+
+.fill-in:hover {
+	box-shadow: inset 0 0 0 $btn-height-half #FFC400;
+}
+
+.fill-up:hover {
+	box-shadow: inset 0 -#{$btn-height} 0 0 #FFC400;
+}
+
+.fill-right:hover {
+	box-shadow: inset $btn-width 0 0 0 #FFC400;
+}
+
+.offset {
+	color: #263238;
+
+	&:hover {
+		color: #FFC400;
+	}
+
+	&-1 {
+		box-shadow: inset 0 0 0 $btn-width-half #FFC400;
+
+		&:hover {
+			box-shadow:
+				inset 0 0 0 0 #FFC400,
+				5px -5px 0 0 #FFC400,
+				-5px 5px 0 0 #FFC400;
+		}
+	}
+
+	&-2 {
+		box-shadow: inset -#{$btn-width} -#{$btn-height} 0 0 #FFC400;
+
+		&:hover {
+			box-shadow:
+				inset 0 0 0 0 #FFC400,
+				5px 5px 0 0 #FFC400;
+				transform: translate(-5px, -5px);
+		}
+	}
+}
+
+button {
+	font-family: Poppins, sans-serif;
+	font-weight: 500;
+	background: transparent;
+	border: 2px solid #FFC400;
+	width: $btn-width;
+	height: $btn-height;
+	transition: all 0.2s ease-in-out;
+	margin: 1em;
+	color: #FFC400;
+
+	&:hover {
+		cursor: pointer;
+		color: #263238;
+	}
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	height: 100vh;
+	background: #263238;
+}
